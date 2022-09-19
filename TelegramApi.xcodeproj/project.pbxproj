@@ -13,6 +13,7 @@
 		69C8FE5328D8BA1000B577C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C8FE5128D8BA1000B577C1 /* Main.storyboard */; };
 		69C8FE5528D8BA1400B577C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C8FE5428D8BA1400B577C1 /* Assets.xcassets */; };
 		69C8FE5828D8BA1400B577C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C8FE5628D8BA1400B577C1 /* LaunchScreen.storyboard */; };
+		69C8FE6528D8BA7B00B577C1 /* Telegram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8FE6428D8BA7B00B577C1 /* Telegram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		69C8FE5428D8BA1400B577C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69C8FE5728D8BA1400B577C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69C8FE5928D8BA1400B577C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C8FE6428D8BA7B00B577C1 /* Telegram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telegram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		69C8FE4A28D8BA1000B577C1 /* TelegramApi */ = {
 			isa = PBXGroup;
 			children = (
-				69C8FE4B28D8BA1000B577C1 /* AppDelegate.swift */,
-				69C8FE4D28D8BA1000B577C1 /* SceneDelegate.swift */,
-				69C8FE4F28D8BA1000B577C1 /* ViewController.swift */,
-				69C8FE5128D8BA1000B577C1 /* Main.storyboard */,
-				69C8FE5428D8BA1400B577C1 /* Assets.xcassets */,
-				69C8FE5628D8BA1400B577C1 /* LaunchScreen.storyboard */,
+				69C8FE6328D8BA5A00B577C1 /* Models */,
+				69C8FE6228D8BA4D00B577C1 /* Resources */,
+				69C8FE6128D8BA3E00B577C1 /* Storyboards */,
+				69C8FE6028D8BA2E00B577C1 /* ViewControllers */,
+				69C8FE5F28D8BA1D00B577C1 /* ServiceFiles */,
 				69C8FE5928D8BA1400B577C1 /* Info.plist */,
 			);
 			path = TelegramApi;
+			sourceTree = "<group>";
+		};
+		69C8FE5F28D8BA1D00B577C1 /* ServiceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				69C8FE4B28D8BA1000B577C1 /* AppDelegate.swift */,
+				69C8FE4D28D8BA1000B577C1 /* SceneDelegate.swift */,
+			);
+			path = ServiceFiles;
+			sourceTree = "<group>";
+		};
+		69C8FE6028D8BA2E00B577C1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				69C8FE4F28D8BA1000B577C1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		69C8FE6128D8BA3E00B577C1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				69C8FE5628D8BA1400B577C1 /* LaunchScreen.storyboard */,
+				69C8FE5128D8BA1000B577C1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		69C8FE6228D8BA4D00B577C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69C8FE5428D8BA1400B577C1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69C8FE6328D8BA5A00B577C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69C8FE6428D8BA7B00B577C1 /* Telegram.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +183,7 @@
 			files = (
 				69C8FE5028D8BA1000B577C1 /* ViewController.swift in Sources */,
 				69C8FE4C28D8BA1000B577C1 /* AppDelegate.swift in Sources */,
+				69C8FE6528D8BA7B00B577C1 /* Telegram.swift in Sources */,
 				69C8FE4E28D8BA1000B577C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
